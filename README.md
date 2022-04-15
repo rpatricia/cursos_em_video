@@ -1,3 +1,3 @@
-# curso em video
+# curso em Vídeo
 ---
  Curso Em Vídeo
