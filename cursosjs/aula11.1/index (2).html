@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>País de Origem</title>
+  </head>
+  <body>
+    <h1>Qual é o seu País?</h1>
+    <input type="text" name="pais" id="pais" />
+    <!-- faltou um jeito de ativar a função, nesse caso o onclick e nome da função -->
+    <input type="button" value="verificar" onclick="verificar()" />
+    <div id="resultado"></div>
+    <script>
+      function verificar() {
+        console.log("teste");
+        // como já selecionou o elemento com o getElementById não deve ser usado o # nesse caso
+        // usaria o # se tivesse usado o document.querySelector('#pais') por exemplo já que ele é genérico e precisa ser bem definido
+        var pais = document.getElementById("pais");
+        var res = document.getElementById("resultado");
+        //esqueceu de colocar o  =
+        res.innerHTML = `<p>Vivenvendo em <strong>${pais}</strong></p>`;
+        //aqui vc usou apenas o pais onde deveria ser o pais.value pq queremos o valor do resultado digitado.
+        if (pais.value == "Brasil") {
+          res.innerHTML = `você é Brasileiro`;
+        } else {
+          res.innerHTML = "Você é Estrangeiro";
+        }
+      }
+    </script>
+  </body>
+</html>
