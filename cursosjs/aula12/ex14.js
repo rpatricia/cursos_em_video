@@ -38,3 +38,4 @@ switch(diaSemana){
      default:
          console.log('[Erro] Dia inválido')
         }
+        /*Terminei a aula 14*/
