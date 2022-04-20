@@ -39,3 +39,4 @@ switch(diaSemana){
          console.log('[Erro] Dia inválido')
         }
         /*Terminei a aula 14*/
+        /* Fiz uma alteração no nome das pastas */

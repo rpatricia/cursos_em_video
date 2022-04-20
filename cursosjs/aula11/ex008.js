@@ -5,3 +5,4 @@ if (vel > 60) {//condição simples
 
 console.log(`Dirige sempre usando cinto de segurança`)
 
+/* Fiz uma alteração no nome das pastas*/
